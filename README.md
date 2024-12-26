@@ -24,12 +24,14 @@ This repository contains scripts for testing quantum circuits using Qiskit, both
     pip install qiskit qiskit-ibm-runtime qiskit-aer matplotlib
     ```
 
-2. Configure your IBM Quantum account by saving your API token (required only for testing with real quantum computers):
+2. Configure your IBM Quantum account by saving your API token. It's required only for testing with real quantum computers:
 
     ```python
     from qiskit_ibm_runtime import QiskitRuntimeService
     QiskitRuntimeService.save_account(channel="ibm_quantum", token="YOUR_API_TOKEN")
     ```
+
+    You can obtain your free API token from the [IBM Quantum](https://quantum.ibm.com/).
 
 ## Usage
 
