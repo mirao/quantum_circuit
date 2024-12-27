@@ -22,6 +22,10 @@
 # Import the necessary libraries
 from qiskit import QuantumCircuit, QuantumRegister, ClassicalRegister, transpile
 from qiskit_ibm_runtime import QiskitRuntimeService, SamplerV2 as Sampler
+
+# Uncomment the following line to test the code on a simulator
+# from qiskit_ibm_runtime.fake_provider import FakeAlmadenV2  # for testing on a simulator with noise
+
 from qiskit.visualization import plot_histogram  # for plotting the results
 import matplotlib.pyplot as plt  # you'll need this for displaying the plot
 
@@ -47,6 +51,9 @@ print(circuit)
 # Get the least busy quantum computer
 service = QiskitRuntimeService()
 backend = service.least_busy(min_num_qubits=3, operational=True, simulator=False)
+# Or use the following line to test the code on a simulator with noise
+# backend = FakeAlmadenV2()  # for testing on a simulator
+
 # Transpile the quantum circuit for the quantum computer
 new_circuit = transpile(circuit, backend)
 

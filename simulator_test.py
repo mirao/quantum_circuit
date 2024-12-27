@@ -1,5 +1,5 @@
 # Description: A simple quantum circuit that creates a superposition and entanglement between qubits.
-# It's running on a simulator.
+# It's running on a simulator that doesn't have noise.
 
 # Example output:
 #

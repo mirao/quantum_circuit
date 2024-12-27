@@ -37,22 +37,20 @@ This repository contains scripts for testing quantum circuits using Qiskit, both
 
 ### Simulator Testing
 
-To execute the quantum circuit on a simulator:
+To execute the quantum circuit on a simulator without noise:
 
 ```sh
 python simulator_test.py
 ```
 
-Result:
 ![Simulator results](simulator_result.png)
 
 ### Real Quantum Computer Testing
 
-To execute the quantum circuit on a real IBM quantum computer:
+To execute the quantum circuit on a real IBM quantum computer with noise:
 
 ```sh
 python real_test.py
 ```
 
-Result:
 ![Real quantum computer results](real_result.png)
